@@ -22,7 +22,6 @@ public class Main {
     }
 
     @SuppressWarnings("unchecked")
-    @Validate(minX = -3, maxX = 5, minY = -5, maxY = -3, minR = 1, maxR = 5)
     public static void post() {
 
         String queryString;
