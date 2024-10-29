@@ -8,153 +8,132 @@
     <body>
         <header>
             <div class="header-content">
-                <div class="header-text">
-                    <h1>Лабораторная работа по вебу №1</h1>
-                    <h2>Багманов Владимир Алексеевич</h2>
-                    <h2>Группа P3230, Вариант №408190</h2>
-                </div>
+                <h1>Лабораторная работа по вебу №1</h1>
+                <h2>Багманов Владимир Алексеевич</h2>
+                <h2>Группа P3230, Вариант №408190</h2>
             </div>
         </header>
-        <table id="mainTable">
-           
-            <tbody>                
-                <tr>
-                    <td>
-                        <table>
-                            <tbody  id="quest">
-                                <th colspan=2>Ваша точка:</th>
-				                <td>
-                                    <br/>
-                                </td>
-                                <tr>
-                                    <td>Введите первую координату</td>
-                                    <td>
-                                        <div>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x-3" value="-3">
-                                                -3
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x-2" value="-2">
-                                                -2 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x-1" value="-1">
-                                                -1 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x0" value="0">
-                                                0 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x1" value="1">
-                                                1 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x2" value="2">
-                                                2 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x3" value="3">
-                                                3 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x4" value="4">
-                                                4 
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" name="x" id="x5" value="5">
-                                                5 
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Введите вторую координату</td>
-                                    <td><input class="illuminated animated" type="text" placeholder="(от -5 до 3)" id = "y"></td>
-                                </tr>
-                                <tr>
-                                    <td>Выберите масштаб карты</td>
-                                    <td>
-                                        <select id="R" name="R">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <button onclick="sendAll()">Проверить</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan = 2 id="status">
-                                        вы не ввели точку
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                    <td>
-                        <svg xmlns="http://www.w3.org/2000/svg" width = "400" heigth = "400">
-                            <line x1="0" y1="200" x2="400" y2="200" stroke="#000720"></line>
-                            <line x1="200" y1="0" x2="200" y2="400" stroke="#000720"></line>
-                            <line x1="350" y1="198" x2="350" y2="202" stroke="#000720"></line>
-                            <text x="355" y="195">R</text>
-                            <line x1="275" y1="198" x2="275" y2="202" stroke="#000720"></line>
-                            <text x="280" y="195">R/2</text>
-                            <line x1="125" y1="198" x2="125" y2="202" stroke="#000720"></line>
-                            <text x="123" y="195">-R/2</text>
-                            <line x1="50" y1="198" x2="50" y2="202" stroke="#000720"></line>
-                            <text x="55" y="195">-R</text>
-                            <line x1="198" y1="50" x2="202" y2="50" stroke="#000720"></line>
-                            <text x="204" y="55">R</text>
-                            <line x1="198" y1="125" x2="202" y2="125" stroke="#000720"></line>
-                            <text x="204" y="130">R/2</text>
-                            <line x1="198" y1="275" x2="202" y2="275" stroke="#000720"></line>
-                            <text x="204" y="280">-R/2</text>
-                            <line x1="198" y1="350" x2="202" y2="350" stroke="#000720"></line>
-                            <text x="204" y="355">-R</text>
+        <div id="mainTable">             
+            <div>
+                <div  id="quest">
+                    <div class = "longRow">Ваша точка:</div>
+                    <div>Введите первую координату</div>
+                    <div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="x" id="x-3" value="-3">
+                                -3
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x-2" value="-2">
+                                -2 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x-1" value="-1">
+                                -1 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x0" value="0">
+                                0 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x1" value="1">
+                                1 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x2" value="2">
+                                2 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x3" value="3">
+                                3 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x4" value="4">
+                                4 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="x" id="x5" value="5">
+                                5 
+                            </label>
+                        </div>
+                    </div>
+                
+                
+                    <div>Введите вторую координату</div>
+                    <div><input class="illuminated animated" type="text" placeholder="(от -5 до 3)" id = "y"></div>
+                
+                
+                    <div>Выберите масштаб карты</div>
+                    <div>
+                        <select id="R" name="R">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <div  class = "longRow">
+                        <button onclick="sendAll()">Проверить</button>
+                    </div>
+                    <div class = "longRow" id="status">
+                        вы не ввели точку
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width = "400" heigth = "400">
+                    <line x1="0" y1="200" x2="400" y2="200" stroke="#000720"></line>
+                    <line x1="200" y1="0" x2="200" y2="400" stroke="#000720"></line>
+                    <line x1="350" y1="198" x2="350" y2="202" stroke="#000720"></line>
+                    <text x="355" y="195">R</text>
+                    <line x1="275" y1="198" x2="275" y2="202" stroke="#000720"></line>
+                    <text x="280" y="195">R/2</text>
+                    <line x1="125" y1="198" x2="125" y2="202" stroke="#000720"></line>
+                    <text x="123" y="195">-R/2</text>
+                    <line x1="50" y1="198" x2="50" y2="202" stroke="#000720"></line>
+                    <text x="55" y="195">-R</text>
+                    <line x1="198" y1="50" x2="202" y2="50" stroke="#000720"></line>
+                    <text x="204" y="55">R</text>
+                    <line x1="198" y1="125" x2="202" y2="125" stroke="#000720"></line>
+                    <text x="204" y="130">R/2</text>
+                    <line x1="198" y1="275" x2="202" y2="275" stroke="#000720"></line>
+                    <text x="204" y="280">-R/2</text>
+                    <line x1="198" y1="350" x2="202" y2="350" stroke="#000720"></line>
+                    <text x="204" y="355">-R</text>
+    
+                    <polygon points="400,200 395,205 395, 195" fill="#000720" stroke="#101F27"></polygon>
+                    <polygon points="200,0 195,5 205,5" fill="#000720" stroke="#101F27"></polygon>
+    
+    
+                    <polygon points="200,200 200,275 350,200" fill-opacity="0.6" stroke="black" fill="blue"></polygon>
+    
+                    <rect x="200" y="125" width="150" height="75" fill-opacity="0.6" stroke="black" fill="blue"></rect>
+    
+    
+                    <path d="M 200 200 L 200 350 A 150 150 0 0 1 50 200 Z" fill-opacity="0.6" stroke="black"
+                        fill="blue"></path>
+    
+                    <circle id="pointer" r="8" cx="200" cy="200" fill-opacity="0.8" fill="#3549fc" stroke="#4d00b8"
+                            visibility="hidden"></circle>
+                </svg>
+            </div>
+
+            <div id="outputContainer">
+                <h4>                     
+                    <table class="history" id = "history">
+                        <tr class="thead">
+                            <td>X:</td>
+                            <td>Y:</td>
+                            <td>R:</td>
+                            <td>time:</td>
+                            <td>time from server(ms):</td>     
+                        </tr>
+                    </table>
+                </h4>
+            </div>
             
-                            <polygon points="400,200 395,205 395, 195" fill="#000720" stroke="#101F27"></polygon>
-                            <polygon points="200,0 195,5 205,5" fill="#000720" stroke="#101F27"></polygon>
-            
-            
-                            <polygon points="200,200 200,275 350,200" fill-opacity="0.6" stroke="black" fill="blue"></polygon>
-            
-                            <rect x="200" y="125" width="150" height="75" fill-opacity="0.6" stroke="black" fill="blue"></rect>
-            
-            
-                            <path d="M 200 200 L 200 350 A 150 150 0 0 1 50 200 Z" fill-opacity="0.6" stroke="black"
-                                fill="blue"></path>
-            
-                            <circle id="pointer" r="8" cx="200" cy="200" fill-opacity="0.8" fill="#3549fc" stroke="#4d00b8"
-                                    visibility="hidden"></circle>
-                        </svg>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td colspan="5" id="outputContainer">
-                        <h4>                     
-                            <table class="history" id = "history">
-                                <tr class="thead">
-                                    <td>X:</td>
-                                    <td>Y:</td>
-                                    <td>R:</td>
-                                    <td>time:</td>
-                                    <td>time from server(ms):</td>     
-                                </tr>
-                            </table>                            
-                        </h4>
-                    </td>
-                </tr>
-            </tbody>
-        
-        </table>
+        </div>
         
         <script type="text/javascript" src="script.js"></script>
     </body>
