@@ -1,3 +1,5 @@
+package messaging;
+
 import com.fastcgi.FCGIInterface;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Sender {
     public static final long startTime = System.nanoTime();
-    public static void send(HttpStatus ansCode,String content, Integer x, Integer y, Integer R) {
+    public static void send(HttpStatus ansCode, String content, Integer x, Integer y, Integer R) {
 
         LocalDateTime time = java.time.LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
