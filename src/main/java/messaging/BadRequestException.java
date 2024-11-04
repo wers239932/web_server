@@ -1,4 +1,4 @@
 package messaging;
 
-public class BadRequestException extends Exception{
+public class BadRequestException extends Exception {
 }
